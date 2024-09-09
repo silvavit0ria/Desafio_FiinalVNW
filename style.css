@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EFEEF3;
+}
+
+header {
+  background-image: url(image/backgound.png);
+  height: 40vh;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #EFEEF3;
+  height: auto;
+}
+header nav img {
+  width: 10vw;
+  padding: 0.5rem;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul li {
+  padding: 1rem;
+  list-style: none;
+  font-size: 1.5rem;
+  font-family: "Kodchasan", sans-serif;
+}
+
+.section-intro {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+}
+.section-intro .section-intro-letreiro {
+  padding: 2.5rem;
+}
+.section-intro .section-intro-letreiro h2 {
+  text-align: center;
+  font-family: "Kodchasan", sans-serif;
+  font-size: 1.8rem;
+  line-height: 5rem;
+  font-weight: 400;
+}
+.section-intro .section-intro-letreiro p {
+  text-align: center;
+  font-family: "Kodchasan", sans-serif;
+  font-size: 1.2rem;
+  width: 40vw;
+  font-weight: 400;
+}
+
+.section-produtos {
+  display: flex;
+  justify-content: space-between;
+}
+.section-produtos h2 {
+  padding: 5rem;
+  font-family: "Kodchasan", sans-serif;
+  font-weight: 400;
+  width: 35vw;
+}
+.section-produtos .section-produtos-image {
+  display: flex;
+  justify-content: space-between;
+}
+.section-produtos .section-produtos-image img {
+  padding: 3.5rem;
+}
+
+@media (max-width: 982px) {
+  body {
+    background-color: #EFEEF3;
+  }
+  header {
+    background-image: none;
+    height: auto;
+  }
+  header nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav img {
+    width: 30vw;
+    align-items: center;
+  }
+  header ul {
+    flex-direction: column;
+  }
+  header ul li {
+    text-align: center;
+  }
+  .section-intro {
+    flex-direction: column;
+    height: auto;
+  }
+  .section-intro .section-intro-letreiro h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .section-intro .section-intro-letreiro p {
+    width: 100%;
+    font-size: 1.8rem;
+  }
+  .section-produtos {
+    flex-direction: column;
+  }
+  .section-produtos h2 {
+    padding: 2rem;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+  }
+  .section-produtos .section-produtos-image {
+    flex-wrap: wrap;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+@media (max-width: 412px) {
+  .section-produtos .section-produtos-image {
+    flex-wrap: wrap;
+  }
+  .section-produtos .section-produtos-image figure {
+    width: 50vw;
+  }
+}
+@media (max-width: 320px) {
+  .section-produtos .section-produtos-image {
+    flex-direction: column;
+    align-items: center;
+  }
+}/*# sourceMappingURL=style.css.map */
